@@ -6,7 +6,7 @@
 
 This project is about creating a Shiny app predicting next word given a sentence.
 
-###-Description of the main folders:
+### -Description of the main folders:
 
 ### App:
 contains the files leading **(ui.R, server.R and Prediction.R that includes the main function for predicting)** to the shiny app.
