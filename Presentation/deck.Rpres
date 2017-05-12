@@ -1,0 +1,93 @@
+<style>
+.midcenter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.footer {
+  color:black;
+  background: #E8E8e8;
+  position: fixed;
+  top: 90%;
+  text-align: center;
+  width: 100%;
+}
+.small-code pre code {
+  font-size: 1em;
+}
+
+</style>
+
+Word Prediction
+========================================================
+author: jordiac
+date: May 2017
+autosize: true
+font-family: "Risque"
+transition: rotate
+
+
+[Word Prediction App](https://jordiac.shinyapps.io/Capstone_App/) 
+
+[Johns Hopkins-Coursera Data Science specialization](https://www.coursera.org/specializations/jhu-data-science) with [Swiftkey](https://swiftkey.com) collaboration.
+
+main files: [Github](https://github.com/jordiac/Capstone_DSS)
+
+Capstone project
+
+
+A Brief Introduction....
+========================================================
+#class: small-code
+
+This presentation is about the Capstone project from the Data Science Specialization offered by Johns Hopkins-coursera with the collaboration of Swiftkey.
+
+The main goal of this project is to build a **word prediction** app able to predict the next word depending on the user's input text. 
+
+The app features:
+
+-Run in a reasonable time
+
+-Easy to use
+
+-Robust (no error message, predict always a word...)
+
+
+
+Data sets and Approach
+========================================================
+
+-The prediction algorithm is based on the text analysis performed with 3 english text files ([link](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)) containing **384 million words**.  Each file has been made from phrases extracted from **blogs**, **news** and **twitter**.
+
+-The prediction algorithm is based on the [Katz Back-off](https://en.wikipedia.org/wiki/Katz%27s_back-off_model) approach which is based on the N-grams frequencies.
+
+-So the model defines 2-gram, 3-gram and 4-gram and then apply the **Katz Back-off** model to define which N-gram word is the most likely.
+
+-We decided to work with 10% of the data set and then we cleaned and featured it so we obtained a suitable and compact data to perform an accurate and quick prediction.
+
+
+
+Cleaning & Featuring
+========================================================
+- **cleaning**: Removing punctuation, numbers, converting all characters to lower ones, removing url and extra white spaces.
+
+- **Featuring**:
+We have reduced the data size by applying the following approach (ex for a 3-gram)
+
+
+*** 
+
+![slide_im](Slides.png)
+
+- Using this approach: **2-grams** (169.8Mb to 0.9Mb) ; 
+**3-grams** (356.8Mb to 6.4Mb) ; **4-grams** (494.8Mb to 2.5Mb).
+s
+
+Shiny App
+========================================================
+
+-So the [shiny app](https://jordiac.shinyapps.io/Capstone_App/) is very simple to use: You just need to type your phrase and you will obtain 5 possible next words (the first one being the most likely).
+
+![Capture](Capt.png)
+
+**Thank you!**
