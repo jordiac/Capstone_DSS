@@ -6,6 +6,7 @@
 
 This project is about creating a Shiny app predicting next word given a sentence.
 
+###-Description of the main folders:
 
 ### App:
 contains the files leading **(ui.R, server.R and Prediction.R that includes the main function for predicting)** to the shiny app.
@@ -13,7 +14,7 @@ contains the files leading **(ui.R, server.R and Prediction.R that includes the 
 Please note that **Prediction.R** calls **Katz_Back-off_3.0.R** and **Clean_2.0.R** that uses the data file **.RData** containing the N-gram featured data. Those N-gram files are obtained using the files in **Cleaning_Featuring** folder.
 
 
-### Cleaning_Featuring
+### Cleaning_Featuring:
 The cleaning and featuring actions can be carried out by running the **Clean_Feature.R** file that will call the **Katz_Back-off_2.2.R**. 
 
 Finally we obtain the N-gram files:
@@ -27,11 +28,11 @@ Finally we obtain the N-gram files:
 - quadgram_fin.RData
 
 
-### Presentation
+### Presentation:
 Contains the main file **deck.Rpres** leading to the R presentation.
 
 
-### Main links
+### Main links:
 
 -[Shiny App](https://jordiac.shinyapps.io/Capstone_App/)
 
