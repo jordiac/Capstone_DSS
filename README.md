@@ -36,7 +36,7 @@ Contains the main file **deck.Rpres** leading to the R presentation.
 
 -[Shiny App](https://jordiac.shinyapps.io/nlp_nwp/)
 
--[RPubs Presentation](http://rpubs.com/jordiac/Capstone_DDS)
+-[RPubs Presentation](http://rpubs.com/jordiac/NPW)
 
 -[Github](https://github.com/jordiac/Capstone_DSS)
 
